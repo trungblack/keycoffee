@@ -12,7 +12,6 @@ class IndexController extends Controller
     public function indexAction()
     {
         $this->view->bodyClass = 'home';
-
         $page = Page::findCachedBySlug('index');
         if (!$page) {
             throw new Exception("Page 'index' not found");
@@ -22,13 +21,14 @@ class IndexController extends Controller
         $this->helper->meta()->set('description', $page->getMeta_description());
         $this->helper->meta()->set('keywords', $page->getMeta_keywords());
         $this->view->page = $page;
-
-        $this->helper->menu->setActive('index');
+        $this->helper->activeMenu()->setActive('index');
+//        $this->helper->menu->setActive('index');
 
     }
 
     public function contactsAction()
     {
+
         $page = Page::findCachedBySlug('contacts');
         if (!$page) {
             throw new Exception("Page 'contacts' not found");
@@ -41,6 +41,21 @@ class IndexController extends Controller
         $this->view->page = $page;
 
         $this->helper->menu->setActive('contacts');
+    }
+    public function productsAction()
+    {
+        $page = Page::findCachedBySlug('products');
+        if (!$page) {
+            throw new Exception("Page 'products' not found");
+            return;
+        }
+
+        $this->helper->title()->append($page->getMeta_title());
+        $this->helper->meta()->set('description', $page->getMeta_description());
+        $this->helper->meta()->set('keywords', $page->getMeta_keywords());
+        $this->view->page = $page;
+        $this->helper->activeMenu()->setActive('products');
+//        $this->helper->menu->setActive('products');
     }
 
 }

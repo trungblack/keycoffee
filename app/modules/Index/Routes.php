@@ -25,6 +25,11 @@ class Routes
             'action' => 'contacts',
         ), 'contacts');
 
+        $router->addML('/products', array(
+            'module' => 'index',
+            'controller' => 'index',
+            'action' => 'products',
+        ), 'products');
         return $router;
 
     }

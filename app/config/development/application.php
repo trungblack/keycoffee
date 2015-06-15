@@ -6,7 +6,7 @@ return array(
         'host' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'dbname' => 'yona-cms',
+        'dbname' => 'keycoffee',
         'charset' => 'utf8',
     ),
     'cache' => 'file', // file, memcache

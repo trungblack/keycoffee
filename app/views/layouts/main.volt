@@ -1,11 +1,8 @@
 <div class="wrapper-in">
-
+    {{ partial('main/pre_header') }}
     <header>
-        {{ partial('main/header') }}
+        {{ partial('main/menu') }}
     </header>
-
-    {#{{ partial('main/menu') }}#}
-
     <div id="main">
 
         {{ content() }}
