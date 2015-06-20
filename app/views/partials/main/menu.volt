@@ -19,7 +19,7 @@
                 </li>
                 {# Đặt Hàng #}
                 <li class="b-top-nav__1level f-top-nav__1level  f-primary-b {{ helper.activeMenu().activeClass('products') }}">
-                    <a href="{{ helper.langUrl(['for':'products']) }}"><i class="fa fa-cloud-download b-menu-1level-ico"></i>{{ helper.translate('Đặt hàng') }}<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
+                    <a href="{{ helper.langUrl(['for':'products']) }}"><i class="fa fa-cloud-download b-menu-1level-ico"></i>{{ helper.translate('Đặt hàng') }}</a>
                 </li>
                 {# Liên hệ #}
                 <li class="b-top-nav__1level f-top-nav__1level  f-primary-b {{ helper.activeMenu().activeClass('contacts') }}">

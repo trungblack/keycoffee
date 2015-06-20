@@ -38,12 +38,13 @@ class AdminUserController extends Controller
 
         $model = new AdminUser();
         $form = new AdminUserForm();
+        $form->initAdding();
 
         if ($this->request->isPost()) {
             $model = new AdminUser();
             $post = $this->request->getPost();
             $form->bind($post, $model);
-            if ($form-()) {
+            if ($form->isValid()) {
                 $model->setCheckboxes($post);
                 if ($model->save()) {
                     $this->flash->success($this->helper->at('User created', ['name' => $model->getLogin()]));
