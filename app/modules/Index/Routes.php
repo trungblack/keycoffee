@@ -30,6 +30,11 @@ class Routes
             'controller' => 'index',
             'action' => 'products',
         ), 'products');
+        $router->addML('/moc-khoa', array(
+            'module' => 'index',
+            'controller' => 'index',
+            'action' => 'contacts',
+        ), 'moc_khoa');
         return $router;
 
     }

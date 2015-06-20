@@ -36,6 +36,10 @@ return [
         'page/admin'         => '*',
         'tree/admin'         => '*',
         'seo/sitemap'        => '*',
+        /*More adding*/
+        'product/admin'      => '*',
+        'product/type'      => '*',
+        /*-----*/
     ],
     'admin'      => [
         'admin/admin-user'   => '*',

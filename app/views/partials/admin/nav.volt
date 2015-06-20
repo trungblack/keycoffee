@@ -7,6 +7,9 @@
         <i class="font icon"></i> {{ helper.at('Contents') }} <i class="icon dropdown"></i>
 
         <div class="menu">
+            <a class="item{{ helper.activeMenu().activeClass('admin-product') }}" href="/product/admin">
+                <i class="archive icon"></i> Manage Product
+            </a>
             <a class="item{{ helper.activeMenu().activeClass('admin-page') }}" href="/page/admin">
                 <i class="file outline icon"></i> {{ helper.at('Manage Pages') }}
             </a>
