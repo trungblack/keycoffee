@@ -1,6 +1,6 @@
 <div class="container b-header__box b-relative">
     {# Logo #}
-    <a href="/" class="b-left b-logo "><img class="color-theme" data-retina src="vendor/theme/img/logo-nhanha.png" alt="Logo" /></a>
+    <a href="/" class="b-left b-logo "><img class="color-theme" data-retina src="vendor/theme/img/logo_web/logo.jpg" alt="Logo" /></a>
     {# Menu #}
     <div class="header-navigation b-header-r b-right b-header-r--icon ">
         <nav class="b-top-nav f-top-nav b-right j-top-nav">
@@ -54,7 +54,7 @@
                 </li>
                 {# Liên hệ #}
                 <li class="b-top-nav__1level f-top-nav__1level  f-primary-b {{ helper.activeMenu().activeClass('contacts') }}">
-                    <a href="{{ helper.langUrl(['for':'contacts']) }}"><i class="fa fa-cloud-download b-menu-1level-ico"></i>{{ helper.translate('Thắc mắc và liên hệ') }}<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
+                    <a href="{{ helper.langUrl(['for':'contacts']) }}"><i class="fa fa-cloud-download b-menu-1level-ico"></i>{{ helper.translate('Thắc mắc và liên hệ') }}</a>
                 </li>
             </ul>
 
