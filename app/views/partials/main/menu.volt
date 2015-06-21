@@ -1,7 +1,4 @@
-<div class="container b-header__box b-relative" style="
-    width: 1200px;
-    height: 89px;
-">
+<div class="container b-header__box b-relative">
     {# Logo #}
     <a href="/" class="b-left b-logo "><img class="color-theme" data-retina src="vendor/theme/img/logo_web/logo.jpg" alt="Logo" /></a>
     {# Menu #}
@@ -53,7 +50,7 @@
                 </li>
                 {# Đặt Hàng #}
                 <li class="b-top-nav__1level f-top-nav__1level  f-primary-b {{ helper.activeMenu().activeClass('products') }}">
-                    <a href="{{ helper.langUrl(['for':'products']) }}"><i class="fa fa-cloud-download b-menu-1level-ico"></i>{{ helper.translate('Đặt hàng') }}<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
+                    <a href="{{ helper.langUrl(['for':'products']) }}"><i class="fa fa-cloud-download b-menu-1level-ico"></i>{{ helper.translate('Đặt hàng') }}</a>
                 </li>
                 {# Liên hệ #}
                 <li class="b-top-nav__1level f-top-nav__1level  f-primary-b {{ helper.activeMenu().activeClass('contacts') }}">

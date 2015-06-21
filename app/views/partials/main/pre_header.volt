@@ -1,7 +1,7 @@
 <div class="b-top-options-panel">
     <div class="container">
         <div class="b-option-contacts f-option-contacts">
-            <a href="mailto:frexystudio@gmail.com" target="_blank">
+            <a href="https://mail.google.com/mail/" target="_blank">
                 <i class="fa fa-envelope-o"></i><span>{{ helper.staticWidget('pre_header-email') }}</span>
             </a>
             <a href="#">

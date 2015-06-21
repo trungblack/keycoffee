@@ -2442,7 +2442,7 @@ header {
   display: inline-block; }
 
 .b-header-r {
-  padding-top: 14px; }
+  padding-top: 35px; }
   @media screen and (min-width: 1025px) {
     .b-header-r.b-header-r--icon {
       padding-right: 300px; } }
@@ -2770,7 +2770,7 @@ header {
   .is-fixed-header .b-logo img {
     max-width: 110px; }
   .is-fixed-header .b-header-r {
-    padding-top: 5px; }
+    padding-top: 20px; }
   .is-fixed-header .b-top-options-panel,
   .is-fixed-header .b-header--hide {
     display: none; }
