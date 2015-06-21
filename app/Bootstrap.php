@@ -225,7 +225,8 @@ class Bootstrap
             ->addCss('vendor/theme/js/fancybox/jquery.fancybox.css')
             ->addCss('vendor/theme/fonts/fonts.css')
 
-            ->addCss('vendor/theme/css/main-default.css')
+            ->addCss('vendor/theme/css/main-yellow.css')
+            ->addCss('vendor/theme/css/custom.css')
             ->addCss('vendor/theme/js/rs-plugin/css/settings.css')
             ->addCss('vendor/theme/js/rs-plugin/css/settings-custom.css')
             ->addCss('vendor/theme/js/rs-plugin/videojs/video-js.css')

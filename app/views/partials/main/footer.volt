@@ -94,7 +94,7 @@
         <div class="col-md-3 col-sm-12 col-xs-12 ">
             <h4 class="f-primary-b">Mạng xã hội</h4>
             <div class="b-short-photo-items-group">
-                {#<div class="fb-like" data-href="https://www.facebook.com/tuonglaixanh?fref=ts" data-layout="standard" data-action="like" data-width="300" data-height="253" data-show-faces="true" data-share="true"></div>#}
+
 
                     <div id="fb-root"></div>
                     <script>(function(d, s, id) {
