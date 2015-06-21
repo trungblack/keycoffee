@@ -42,7 +42,7 @@ class ActiveMenu extends \Phalcon\Mvc\User\Component
     public function activeClass($value)
     {
         if ($this->isActive($value)) {
-            return ' active';
+            return 'is-active-top-nav__1level';
         }
     }
 

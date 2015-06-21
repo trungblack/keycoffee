@@ -7356,10 +7356,10 @@ body .b-slider--thumb-visible .tp-bullets {
     height: 0; }
   .b-categories-icons > .b-column {
     float: left;
-    margin-left: 1%;
+    margin-left: 10%;
     width: 19.2%; }
   .b-categories-icons > .b-column:first-child, .b-categories-icons > .b-column:nth-child(5n+1) {
-    margin-left: 0; } }
+    margin-left: 150; } }
 
 .b-categories-icons__item_link {
   -webkit-transition: all 0.3s linear;
@@ -7438,8 +7438,7 @@ body .b-slider--thumb-visible .tp-bullets {
     color: white; }
 
 .b-categories-icons__item_icon {
-  background: #e26228;
-  border: 3px solid #e6e6e6;
+  border: 3px solid #6A98EC;
   border-radius: 50%;
   display: inline-block;
   margin-bottom: 18px;

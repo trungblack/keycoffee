@@ -11,6 +11,7 @@
 
     <link href="/vendor/semantic-1.12.3/semantic.min.css" rel="stylesheet" type="text/css">
     <link href="/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/bootstrap/style_mknn.css" rel="stylesheet" type="text/css">
     <link href="/vendor/bootstrap/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css">
 
     <!--less-->
