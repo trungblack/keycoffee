@@ -1,4 +1,7 @@
-<div class="container b-header__box b-relative">
+<div class="container b-header__box b-relative" style="
+    width: 1200px;
+    height: 89px;
+">
     {# Logo #}
     <a href="/" class="b-left b-logo "><img class="color-theme" data-retina src="vendor/theme/img/logo_web/logo.jpg" alt="Logo" /></a>
     {# Menu #}
