@@ -1,6 +1,6 @@
 <div class="container b-header__box b-relative">
     {# Logo #}
-    <a href="/" class="b-left b-logo "><img class="color-theme" data-retina src="vendor/theme/img/logo_web/logo.jpg" alt="Logo" /></a>
+    <a href="/" class="b-left b-logo "><img class="color-theme" data-retina src="/vendor/theme/img/logo_web/logo.jpg" alt="Logo" /></a>
     {# Menu #}
     <div class="header-navigation b-header-r b-right b-header-r--icon ">
         <nav class="b-top-nav f-top-nav b-right j-top-nav">
@@ -10,9 +10,8 @@
                     <a href="{{ helper.langUrl(['for':'index']) }}"><i class="fa fa-cloud-download b-menu-1level-ico"></i>{{ helper.translate('Cửa hàng') }}<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
                     {# Sub dropdown #}
                     <div class="b-top-nav__dropdomn">
-                        <ul class="b-top-nav__2level_wrap">
+
                             {{ helper.productMenuItems() }}
-                        </ul>
 
                     </div>
 

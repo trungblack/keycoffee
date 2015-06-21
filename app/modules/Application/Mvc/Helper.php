@@ -183,4 +183,9 @@ class Helper extends \Phalcon\Mvc\User\Component
         return $view->partial($template, $data);
     }
 
+    public function productMenuItems(){
+        $helper = new \Product\Helper\Helper();
+        return $helper->generateProductMenuItems();
+    }
+
 }

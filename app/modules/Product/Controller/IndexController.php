@@ -62,7 +62,7 @@ class IndexController extends Controller
         $this->view->type = $typeModel;
         $this->view->products = $products;
         $this->view->product = $product;
-        $this->helper->activeMenu()->setActive('product');
+        $this->helper->activeMenu()->setActive('index');
 
     }
 

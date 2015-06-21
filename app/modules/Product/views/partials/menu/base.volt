@@ -1,13 +1,8 @@
-<div class="product-items-menu">
-    {% for type in types %}
-        {#<li><a href="{{ helper.langUrl(['for':'product','type':'coffee','slug':product.getSlug()]) }}">{{ product.getTitle() }}</a></li>#}
-        <div class="product-menu-item col-md-{{cols}}">
-            <p class="product-menu-title">{{ type.getTitle() }}</p>
-            {% for product in type.products %}
-                <ul class="list-group">
-                    <li class="list-group-item" ><a  href=" {{ helper.langUrl(['for':'product','type':type.getSlug(),'slug':product.getSlug()]) }}">{{ product.getTitle() }}</a></li>
-                </ul>
-            {% endfor %}
-        </div>
+{% for type in types %}
+    <ul class="b-top-nav__2level_wrap">
+    <li class="b-top-nav__2level_title f-top-nav__2level_title">{{ type.getTitle() }}</li>
+    {% for product in type.products %}
+        <li class="b-top-nav__2level f-top-nav__2level f-primary"><a href="{{ helper.langUrl(['for':'product','type':type.getSlug(),'slug':product.getSlug()]) }}"><i class="fa fa-angle-right"></i>{{ product.getTitle() }}</a></li>
     {% endfor %}
-</div>
+    </ul>
+{% endfor %}

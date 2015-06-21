@@ -39,6 +39,7 @@ return [
         /*More adding*/
         'product/admin'      => '*',
         'product/type'      => '*',
+        'product/index'    => '*',
         /*-----*/
     ],
     'admin'      => [
