@@ -40,7 +40,7 @@ class IndexController extends Controller
         $this->helper->meta()->set('keywords', $page->getMeta_keywords());
         $this->view->page = $page;
 
-        $this->helper->menu->setActive('contacts');
+        $this->helper->activeMenu()->setActive('contacts');
     }
     public function productsAction()
     {
