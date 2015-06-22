@@ -23,7 +23,7 @@
 <div class="container">
     <div class="b-footer-secondary row">
         <div class="col-md-3 col-sm-12 col-xs-12 f-center b-footer-logo-containter">
-            <a href=""><img data-retina class="b-footer-logo color-theme" width="150" height="150" src="vendor/theme/img/mockhoa/LoGoNhaNha.jpg" alt="Logo"/></a>
+            <a href=""><img data-retina class="b-footer-logo color-theme" width="150" height="150" src="/vendor/theme/img/mockhoa/LoGoNhaNha.jpg" alt="Logo"/></a>
             <div class="b-footer-logo-text f-footer-logo-text">
                 <p> Huy HIệu Móc Khóa Nhã Nhã. Bạn Cứ Việc Đưa Hình - Thiết Kế Đã Có Shop Lô</p>
                 <div class="b-btn-group-hor f-btn-group-hor">

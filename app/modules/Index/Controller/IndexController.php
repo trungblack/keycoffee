@@ -57,5 +57,18 @@ class IndexController extends Controller
         $this->helper->activeMenu()->setActive('products');
 //        $this->helper->menu->setActive('products');
     }
+    public function mockhoaAction()
+    {
+        $page = Page::findCachedBySlug('moc-khoa');
+        if (!$page) {
+            throw new Exception("Page 'móc khóa' not found");
+            return;
+        }
+
+        $this->helper->title()->append($page->getMeta_title());
+        $this->helper->meta()->set('description', $page->getMeta_description());
+        $this->helper->meta()->set('keywords', $page->getMeta_keywords());
+        $this->view->page = $page;
+    }
 
 }
