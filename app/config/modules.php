@@ -15,5 +15,7 @@ return array(
     'Seo',
     'Menu',
     'Tree',
-    'Product'
+    'Product',
+    'Slider',
+    'Gallery'
 );

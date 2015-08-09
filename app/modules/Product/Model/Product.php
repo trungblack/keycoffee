@@ -29,6 +29,7 @@ class Product extends Model
     public $id;
     public $type_id;
     public $title;
+    public $gallery_id;
     public $slug;
     public $short_description;
     public $text;
@@ -129,6 +130,15 @@ class Product extends Model
     public function getId()
     {
         return $this->id;
+    }
+    public function setGallery_id($id)
+    {
+        $this->gallery_id = $id;
+    }
+
+    public function getGallery_id()
+    {
+        return $this->gallery_id;
     }
 
     public function setPrice($price)

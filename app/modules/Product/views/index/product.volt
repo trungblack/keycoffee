@@ -2,7 +2,7 @@
     <div class="b-inner-page-header f-inner-page-header">
         <div class="b-inner-page-header__content">
             <div class="container">
-                <h1 class="f-primary-l c-default">Thông tin chi tiết sản phầm</h1>
+                <h1 class="f-primary-l c-default">Thông tin chi tiết</h1>
                 <div class="f-primary-l f-inner-page-header_title-add c-senary">Nới tin cậy nhất với khách hàng</div>
             </div>
         </div>
@@ -13,9 +13,8 @@
         <div class="b-breadcrumbs f-breadcrumbs">
             <div class="container">
                 <ul>
-                    <li><a href="#"><i class="fa fa-home"></i>Cửa hàng</a></li>
-                    <li><i class="fa fa-angle-right"></i><a href="#">Shopping</a></li>
-                    <li><i class="fa fa-angle-right"></i><span> Detail</span></li>
+                    <li><a href="/"><i class="fa fa-home"></i>Cửa hàng</a></li>
+                    <li><i class="fa fa-angle-right"></i><span>Chi tiết</span></li>
                 </ul>
             </div>
         </div>
@@ -32,76 +31,14 @@
                                 <div class="b-product-card__visual-wrap">
                                     <div class="flexslider b-product-card__visual flexslider-zoom">
                                         <ul class="slides">
-                                            <li>
-                                                {% set image = helper.image([
-                                                'id': product.getId(),
-                                                'type': 'product',
-                                                'width': 200,
-                                                'strategy': 'w'
-                                                ]) %}
-                                                {{ image.imageHTML() }}
-                                            </li>
-                                            <li>
-                                                {% set image = helper.image([
-                                                'id': product.getId(),
-                                                'type': 'product',
-                                                'width': 200,
-                                                'strategy': 'w'
-                                                ]) %}
-                                                {{ image.imageHTML() }}
-                                            </li>
-                                            {#<li>
-                                                <img src="img/mockhoa/mk_mc2.jpg" />
-                                            </li>
-                                            <li>
-                                                <img src="img/mockhoa/mk_mc3.jpg" />
-                                            </li>
-                                            <li>
-                                                <img src="img/mockhoa/mk_mc4.jpg" />
-                                            </li>
-                                            <li>
-                                                <img src="img/mockhoa/mk_mc7.jpg" />
-                                            </li>
-                                            <li>
-                                                <img src="img/mockhoa/mk_mc6.jpg" />
-                                            </li>#}
+                                            {{ helper.gallery(product.getGallery_id()) }}
+
                                         </ul>
                                     </div>
                                     <div class="flexslider flexslider-thumbnail b-product-card__visual-thumb carousel-sm">
                                         <ul class="slides">
-                                            <li>
-                                                {% set image = helper.image([
-                                                'id': product.getId(),
-                                                'type': 'product',
-                                                'width': 300,
-                                                'strategy': 'w'
-                                                ]) %}
-                                                {{ image.imageHTML() }}
-                                            </li>
-                                            <li>
-                                                {% set image = helper.image([
-                                                'id': product.getId(),
-                                                'type': 'product',
-                                                'width': 300,
-                                                'strategy': 'w'
-                                                ]) %}
-                                                {{ image.imageHTML() }}
-                                            </li>
-                                            {#<li>
-                                                <img src="img/mockhoa/mk_mc2.jpg" />
-                                            </li>
-                                            <li>
-                                                <img src="img/mockhoa/mk_mc3.jpg" />
-                                            </li>
-                                            <li>
-                                                <img src="img/mockhoa/mk_mc4.jpg" />
-                                            </li>
-                                            <li>
-                                                <img src="img/mockhoa/mk_mc7.jpg" />
-                                            </li>
-                                            <li>
-                                                <img src="img/mockhoa/mk_mc6.jpg" />
-                                            </li>#}
+                                            {{ helper.gallery(product.getGallery_id()) }}
+
                                         </ul>
                                     </div>
                                 </div>

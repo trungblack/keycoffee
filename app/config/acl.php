@@ -10,9 +10,14 @@ return [
         'page/index'        => '*',
         'page/admin'        => '*',
         'publication/index' => '*',
+        'product/index'    => '*',
+
     ],
     'member'     => [
         'index/index' => '*',
+        'product/type'      => '*',
+
+
     ],
     // backend
     'journalist' => [
@@ -39,8 +44,8 @@ return [
         'seo/sitemap'        => '*',
         /*More adding*/
         'product/admin'      => '*',
-        'product/type'      => '*',
-        'product/index'    => '*',
+        'slider/admin'       => '*',
+        'gallery/admin'       => '*',
         /*-----*/
     ],
     'admin'      => [
@@ -58,5 +63,12 @@ return [
         'seo/sitemap'        => '*',
         'seo/manager'        => '*',
         'tree/admin'         => '*',
+        /*More adding*/
+        'product/admin'      => '*',
+        'slider/admin'       => '*',
+        'gallery/admin'       => '*',
+
+        /*-----*/
+
     ],
 ];

@@ -30,6 +30,23 @@ class Helper extends \Phalcon\Mvc\User\Component
         }
         return $html;
     }
+    public function generateProductHomeItems()
+    {
+        $types = Type::find();
+
+        if (count($types) > 0) {
+            $cols =  count($types);
+            $view = clone($this->getDI()->get('view'));
+            $view->start();
+            $view->setViewsDir(__DIR__ . '/../views/');
+            $view->setPartialsDir('partials/');
+
+            $view->partial('home/base', array('types' => $types,'cols' => $cols));
+            $html = ob_get_contents();
+            $view->finish();
+        }
+        return $html;
+    }
 
 
 } 
