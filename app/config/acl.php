@@ -8,6 +8,7 @@ return [
         'index/index'       => '*',
         'index/error'       => '*',
         'page/index'        => '*',
+        'page/admin'        => '*',
         'publication/index' => '*',
         'product/index'    => '*',
 
