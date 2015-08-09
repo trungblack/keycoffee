@@ -162,6 +162,11 @@ class Helper extends \Phalcon\Mvc\User\Component
         return $helper->slider($id);
     }
 
+    public function sliderRevolution($id)
+    {
+        $helper = new \Slider\Mvc\Helper();
+        return $helper->sliderRevolution($id);
+    }
     public function javascript($id)
     {
         $javascript = \Cms\Model\Javascript::findCachedById($id);
@@ -186,6 +191,27 @@ class Helper extends \Phalcon\Mvc\User\Component
     public function productMenuItems(){
         $helper = new \Product\Helper\Helper();
         return $helper->generateProductMenuItems();
+    }
+    public function productHomeItems()
+    {
+        $helper = new \Product\Helper\Helper();
+        return $helper->generateProductHomeItems();
+    }
+        public function gallery($id)
+    {
+        $helper = new \Gallery\Mvc\Helper();
+        return $helper->gallery($id);
+    }
+    public function carousel($id)
+    {
+        $helper = new \Gallery\Mvc\Helper();
+        return $helper->carousel($id);
+    }
+
+    public function owlCarousel($id)
+    {
+        $helper = new \Gallery\Mvc\Helper();
+        return $helper->owlCarousel($id);
     }
 
 }

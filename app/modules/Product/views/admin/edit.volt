@@ -3,10 +3,17 @@
 
     <!--controls-->
     <div class="ui segment">
+        {% if not (type is empty) %}
 
         <a href="/product/admin/{{ type }}?lang={{ constant('LANG') }}" class="ui button">
             <i class="icon left arrow"></i> Back
         </a>
+
+        {% else %}
+            <a href="/product/admin" class="ui button">
+                <i class="icon left arrow"></i> Back
+            </a>
+        {% endif%}
 
         <div class="ui positive submit button">
             <i class="save icon"></i> Save
@@ -37,6 +44,7 @@
     <div class="ui segment">
         {{ form.renderDecorated('type_id') }}
         {{ form.renderDecorated('title') }}
+        {{ form.renderDecorated('gallery_id') }}
         {{ form.renderDecorated('slug') }}
         {{ form.renderDecorated('date') }}
         {{ form.renderDecorated('price') }}

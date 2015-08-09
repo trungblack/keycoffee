@@ -16,6 +16,8 @@ use Phalcon\Forms\Element\TextArea;
 use Phalcon\Forms\Element\Select;
 use \Phalcon\Forms\Element\File;
 use Product\Model\Type;
+use Gallery\Model\Gallery;
+
 
 class ProductForm extends Form
 {
@@ -32,6 +34,10 @@ class ProductForm extends Form
         )));
         $title->setLabel('Title');
         $this->add($title);
+
+        $gallery = new Select('gallery_id', Gallery::find(),array('using'=>array('id','title')));
+        $gallery->setLabel('Gallery');
+        $this->add($gallery);
 
         $slug = new Text('slug');
         $slug->setLabel('Slug');

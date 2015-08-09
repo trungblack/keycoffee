@@ -4,49 +4,47 @@
  * @author Oleksandr Torosh <web@wezoom.net>
  */
 
-namespace Product\Helper;
+namespace Slider\Mvc;
 
-
-use Product\Model\Product;
-use Product\Model\Type;
+use Slider\Model\Slider;
 
 class Helper extends \Phalcon\Mvc\User\Component
 {
 
-    public function generateProductMenuItems()
+    public function slider($id)
     {
-        $types = Type::find();
+        $slider = Slider::findCachedById($id);
+        $html = '';
 
-        if (count($types) > 0) {
-            $cols =  round(12/count($types));
+        if ($slider && count($slider->cachedImages())) {
             $view = clone($this->getDI()->get('view'));
             $view->start();
             $view->setViewsDir(__DIR__ . '/../views/');
             $view->setPartialsDir('partials/');
-
-            $view->partial('menu/base', array('types' => $types,'cols' => $cols));
+            $view->partial('slider/base', array('slider' => $slider));
             $html = ob_get_contents();
             $view->finish();
         }
+
         return $html;
     }
-    public function generateProductHomeItems()
-    {
-        $types = Type::find();
 
-        if (count($types) > 0) {
-            $cols =  count($types);
+    public function sliderRevolution($id)
+    {
+        $slider = Slider::findCachedById($id);
+        $html = '';
+
+        if ($slider && count($slider->cachedImages())) {
             $view = clone($this->getDI()->get('view'));
             $view->start();
             $view->setViewsDir(__DIR__ . '/../views/');
             $view->setPartialsDir('partials/');
-
-            $view->partial('home/base', array('types' => $types,'cols' => $cols));
+            $view->partial('slider/revolution', array('slider' => $slider));
             $html = ob_get_contents();
             $view->finish();
         }
+
         return $html;
     }
-
 
 } 
