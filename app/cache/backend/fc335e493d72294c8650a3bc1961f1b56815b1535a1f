@@ -1,0 +1,1 @@
+C:34:"Phalcon\Mvc\Model\Resultset\Simple":184:{a:5:{s:5:"model";C:26:"Gallery\Model\GalleryImage":55:{a:3:{s:2:"id";N;s:10:"gallery_id";N;s:9:"sortorder";N;}}s:5:"cache";N;s:4:"rows";a:0:{}s:9:"columnMap";N;s:11:"hydrateMode";i:0;}}
